@@ -40,10 +40,10 @@ alert(phrase); // Ошибка, нет такой переменной!
 // про которое будет рассказано в Синтаксис "new Function").
 
 function outerFunction(outerVariable) {
-    return function innerFunction(innerVariable) {
-        console.log('Внешняя переменная:', outerVariable);
-        console.log('Внутренняя переменная:', innerVariable);
-    };
+  return function innerFunction(innerVariable) {
+    console.log('Внешняя переменная:', outerVariable);
+    console.log('Внутренняя переменная:', innerVariable);
+  };
 }
 
 const closureFunction = outerFunction('Я внешняя переменная');
